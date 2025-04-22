@@ -1,4 +1,4 @@
-# OCR PROJECT
+# TEXT EXTRACTER(OCR) 
 ---
 
 ## 🚀 Features
