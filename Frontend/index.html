@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Text Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Image Text Extractor</h1>
+        <p>Upload an image to enhance it and extract text content</p>
+    </header>
+
+    <div class="container">
+        <div class="upload-section">
+            <h2>Upload Image</h2>
+            <div class="upload-box" id="uploadBox">
+                <i class="upload-icon">📁</i>
+                <p>Click or drag and drop an image here</p>
+                <input type="file" id="uploadInput" accept="image/*">
+            </div>
+            <button id="processBtn" disabled>Process Image</button>
+        </div>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="results-section" id="resultsSection">
+            <h2>Results</h2>
+            <div class="image-container">
+                <h3>Original vs Enhanced</h3>
+                <div class="image-preview" id="imagePreview">
+                    <!-- Images will be added here -->
+                </div>
+            </div>
+            <div>
+                <h3>Extracted Text</h3>
+                <div class="text-output" id="textOutput">Text will appear here after processing...</div>
+            </div>
+            <button id="newImageBtn">Process New Image</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify-functions"
+  publish = "frontend"  # You may not need this if you're only deploying the backend.
+
+[[redirects]]
+  from = "/api/*"
+  to = "/functions/api.py"
+  status = 200
+  force = true
